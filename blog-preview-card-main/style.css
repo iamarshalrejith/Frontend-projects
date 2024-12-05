@@ -1,0 +1,181 @@
+/* General styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.card {
+    border: 2px solid black;
+    background-color: white;
+    height: 500px;
+    width: 350px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-right: solid black 10px;
+    border-bottom: solid black 10px;
+}
+
+.image {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+}
+
+.date {
+    margin: 10px 0px 0px 15px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(0, 0%, 7%);
+}
+
+h2 {
+    padding: 10px 0px 0px 15px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bolder;
+}
+
+h2:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.para {
+    margin: 15px 5px 0px 10px;
+}
+
+.para p {
+    margin-right: 10px;
+    padding: 3px 5px 0px 5px;
+    color: hsl(0, 0%, 42%);
+    font-family: 'Figtree', sans-serif;
+    font-size: 17px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 18px;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer h4 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 280px;  
+        height: auto;  
+        border-radius: 15px;  
+    }
+
+    .image {
+        padding: 10px;  
+    }
+
+    button {
+        margin-left: 10px;
+        padding: 4px 8px;  
+    }
+
+    .date {
+        font-size: 12px;  
+    }
+
+    h2 {
+        font-size: 18px;  
+        padding: 10px 0px 0px 10px;
+    }
+
+    .para p {
+        font-size: 15px;  
+    }
+
+    footer {
+        margin: 10px 0px 0px 10px;  
+    }
+
+    footer img {
+        height: 35px;  
+        width: 35px;
+    }
+
+    footer h4 {
+        font-size: 16px; 
+    }
+}
+@media (min-width: 1440px) {
+    .card {
+        width: 350px; 
+        height: 500px;  
+    }
+
+    .image {
+        padding: 20px;  
+    }
+
+    button {
+        padding: 5px 10px;  
+    }
+
+    h2 {
+        font-size: 22px;  
+    }
+
+    .para p {
+        font-size: 17px;  
+    }
+
+    footer {
+        margin: 20px 0px 0px 18px;  
+    }
+
+    footer img {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer h4 {
+        font-size: 17px;
+    }
+}
+
