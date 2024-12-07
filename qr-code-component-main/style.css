@@ -53,7 +53,8 @@ p {
     .card {
         max-width: 450px;
         padding-bottom: 30px; 
-        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:20px;
     }
     h2 {
         margin: 10px 20px; 
