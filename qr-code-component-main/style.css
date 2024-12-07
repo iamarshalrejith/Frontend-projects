@@ -8,11 +8,8 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: #D5E1EF;
     height: 100vh;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
 }
-main {
+main{
     height: inherit;
     display: flex;
     align-items: center;
@@ -29,16 +26,15 @@ main {
     margin-left: 25px;
     margin-right: 25px;
     border-radius: 20px;
-    padding: 20px; /* Add padding to the card for spacing */
 }
-picture {
+picture{
     padding: 20px;
 }
-img {
+img{
     border-radius: 10px;
     width: 100%;
 }
-h2 {
+h2{
     padding: 15px;
     text-align: center; 
     margin: 0px 10px 10px 10px;
@@ -56,15 +52,15 @@ p {
 @media (min-width: 1440px) {
     .card {
         max-width: 450px;
-        padding: 20px;
-        margin: 0 auto; 
-        box-sizing: border-box; 
+        padding-bottom: 30px; 
+        margin:0 auto;
     }
     h2 {
         margin: 10px 20px; 
         font-size: 1.9rem; 
         line-height: 1.2; 
         text-align: center; 
+        
     }
     p {
         margin: 20px 30px;
