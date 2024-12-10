@@ -97,7 +97,7 @@ p{
     .card {
         display: flex;
         max-width: 1000px;
-        height: 600px;
+        height: 400px;
         flex-direction: row-reverse;
         border-radius: 10px; /* Maintain card's rounded corners */
     }
