@@ -96,8 +96,8 @@ p{
 @media (min-width:1440px) {
     .card {
         display: flex;
-        max-width: 1000px;
-        height: 400px;
+        max-width: 1100px;
+        height: 525px;
         flex-direction: row-reverse;
         border-radius: 10px; /* Maintain card's rounded corners */
     }
