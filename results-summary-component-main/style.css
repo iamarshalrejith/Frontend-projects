@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  overflow-x: hidden; 
+}
+
+p {
+  font-size: 20px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 380px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4936f2;
+  height: 375px;
+  width: 100%; 
+  border-radius: 0 0 40px 40px;
+  margin: 0; 
+  padding: 0; 
+}
+
+.pone {
+  text-align: center;
+  margin-top: 60px;
+  color: #b6a6ff;
+  font-weight: 700;
+}
+
+.circle {
+  margin-top: 30px;
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #472cdd;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.circle p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #8b81ff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: hsl(221, 100%, 96%);
+}
+
+.content p {
+  text-align: center;
+  margin-top: 10px;
+  color: #a8a4ff;
+  margin-bottom: 30px;
+  font-size: 15px;
+  margin: 0 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+section h3 {
+  margin: 25px 0 10px 25px;
+}
+
+.marks {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.marks .one {
+  background-color: #fff6f5;
+  padding: 20px;
+  margin: 8px 10px;
+  border-radius: 15px;
+}
+
+.marks ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  color: #979098;
+}
+
+#x {
+  color: hsl(0, 100%, 67%);
+}
+#y {
+  color: hsl(39, 100%, 56%);
+}
+#z {
+  color: hsl(166, 100%, 37%);
+}
+#a {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  text-align: center;
+  padding: 15px;
+  width: 300px;
+  border-radius: 35px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  margin: 20px 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+}
+button:hover{
+  background-color:  #5239f5;
+}
+@media (min-width: 1440px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    align-items: stretch;
+  }
+  header {
+    width: 50%;
+    height: auto; 
+    padding: 20px;
+    border-radius: 40px 40px 40px 40px;
+  }
+  section {
+    width: 50%;
+    height: auto;
+    padding: 20px; 
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 40px 40px 0;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    background-color: #472cdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+  }
+  
+  button {
+    padding: 15px;
+    width: 80%; 
+    max-width: 300px; 
+    border-radius: 35px;
+    margin: 25px auto; 
+  }
+}
