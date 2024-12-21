@@ -1,4 +1,5 @@
 🌤️ Weather App
+
 A simple weather application that allows users to check the current weather for any city around the world. It fetches real-time data from the OpenWeatherMap API and displays the weather information, including temperature, humidity, and wind speed.
 
 🚀 Features
