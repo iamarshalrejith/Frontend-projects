@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="assets/images/background-pattern-desktop.svg">
+        <img
+          src="assets/images/background-pattern-mobile.svg"
+          alt="background-pattern-mobile"
+        />
+      </picture>
+      <div class="card">
+        <div class="one">
+          <ul>
+            <li><img src="assets/images/icon-star.svg" alt="icon-star" /></li>
+            <li><h1>FAQs</h1></li>
+          </ul>
+        </div>
+
+        <div class="two">
+          <ul>
+            <li>
+              <span>What is Frontend Mentor, and how will it help me?</span>
+            </li>
+            <li><img src="assets/images/icon-minus.svg" alt="icon-minus" /></li>
+          </ul>
+        </div>
+        <p class="a">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </p>
+
+        <div class="three">
+          <div class="x">
+            <ul>
+              <li><span>Is Frontend Mentor free?</span></li>
+              <li><img src="assets/images/icon-plus.svg" alt="icon-plus" class="toggle-icon" id="s"/></li>
+            </ul>
+          </div>
+          <p class="visible hidden">
+            Yes, Frontend Mentor offers both free and premium coding challenges...
+          </p>
+          <div class="x">
+            <ul>
+              <li>
+                <span>
+                  Can I use Frontend Mentor projects in my portfolio?</span
+                >
+              </li>
+              <li><img src="assets/images/icon-plus.svg" alt="icon-plus" class="toggle-icon" /></li>
+            </ul>
+          </div>
+          <p class=" visible hidden">
+            Yes, you can use projects completed on Frontend Mentor in your portfolio...
+          </p>
+          <div class="x">
+            <ul>
+              <li>
+                <span
+                  >How can I get help if I'm stuck on a Frontend Mentor
+                  challenge?</span
+                >
+              </li>
+              <li><img src="assets/images/icon-plus.svg" alt="icon-plus" class="toggle-icon" /></li>
+            </ul>
+          </div>
+          <p class="visible hidden">
+            The best place to get help is inside Frontend Mentor's Discord community...
+          </p>
+        </div>
+      </div>
+
+      <!-- Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+  option providing access to a range of projects suitable for all skill levels.
+
+ 
+
+  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!
+
+
+  
+  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members. -->
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Arshal Rejith S</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

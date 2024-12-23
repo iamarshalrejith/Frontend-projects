@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    bottom: 100px;
+    border-radius:10px ;
+}
+.one, .one ul , .one li,.two, .two ul, .two li, .three , .three li, .three ul{
+    display: flex;
+}
+.one{
+    margin: 20px 15px 0px 15px;
+}
+.one img{
+    width: 25px;
+}
+.one h1{
+    margin-left: 1.2rem;
+    color: hsl(292, 42%, 14%);
+}
+.two{
+    margin: 20px 20px 0px 20px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+.two span{
+    padding-right: 30px;
+}
+.two img{
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.a{
+  text-align: left;
+  margin: 25px 10px 0px 10px;   
+  padding: 0px 5px;
+  color: hsl(292, 16%, 49%);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: light;
+}
+.three{
+    flex-direction: column;
+    margin-top: 35px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+.x{
+    display:flex ;
+    margin: 0px 30px 20px 30px;
+}
+.x span{
+    padding-right:0px ;
+}
+.x img{
+    width: 30px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+    position: relative;
+}
+.visible{
+    margin: 0px 20px 20px 30px;
+    color: hsl(292, 42%, 14%);;
+    background-color: hsl(275, 100%, 97%);
+    font-weight: 500;
+}
+@media (min-width:1400px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+    }
+    .card {
+        max-width: 500px;
+        height: auto; 
+        position: relative;
+        border: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        bottom: 100px;
+        border-radius: 10px;
+    }
+    .two {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        margin: 20px 20px 0px 20px;
+        font-weight: 600;
+        color: hsl(292, 42%, 14%);
+    }
+    
+    .two span {
+        flex-grow: 1; 
+    }
+    
+    .two img {
+        width: 30px;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    
+    .a{
+        margin-left: 30px;
+    }
+    #s{
+       position: relative;
+       left: 180px;
+    }
+}
