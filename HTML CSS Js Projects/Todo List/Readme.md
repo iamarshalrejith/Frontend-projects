@@ -12,7 +12,9 @@ Features ✨
 Technologies Used 💻
 
 HTML
+
 CSS
+
 JavaScript
 
 
@@ -34,6 +36,7 @@ Open index.html in your browser to use the To-Do List application.
 File Structure 📂
 
 todo-list-app/
+
 │
 ├── index.html        # Main HTML file
 
