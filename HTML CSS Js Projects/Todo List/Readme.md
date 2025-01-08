@@ -12,7 +12,9 @@ Features ✨
 Technologies Used 💻
 
 HTML
+
 CSS
+
 JavaScript
 
 
@@ -20,30 +22,30 @@ How It Works ⚙️
 
 Add Task ➕: You can add a task by typing into the input box and clicking the "Add" button. Each task will appear in the task list.
 Mark Task as Complete ✅: Click on a task to toggle it between checked and unchecked states. When checked, the task is crossed out.
+
 Remove Task ❌: Click the "×" button next to any task to delete it from the list.
+
 Persistence 🔒: Tasks are saved in your browser's local storage. When you reload the page, tasks that were added previously will be restored.
 
 Setup and Installation 🚀
+
 Clone or download this repository to your local machine.
+
 Open index.html in your browser to use the To-Do List application.
 
 File Structure 📂
 
 todo-list-app/
+
 │
 ├── index.html        # Main HTML file
+
 ├── style.css         # CSS styles for the app
-├── script.js         # JavaScript functionality
+
+├── script.js         # JavaScript
+functionality
+
 ├── Images/           # Folder containing image assets (e.g., icons, checkboxes)
-
-How to Contribute 🤝
-
-Fork the repository.
-Clone your fork locally.
-Create a new branch (git checkout -b feature-name).
-Make your changes and commit them (git commit -am 'Add feature').
-Push your changes to your forked repository (git push origin feature-name).
-Submit a pull request.
 
 License 📜
 
