@@ -23,9 +23,10 @@ body {
 .card {
   max-width: 375px;
   background-color: white;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  text-align: center;
 }
 
 #banner {
@@ -37,10 +38,7 @@ body {
 }
 
 .avatar {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 50px;
+  margin-top: -50px; /* Adjusted to overlap with the banner */
 }
 
 .avatar img {
@@ -51,10 +49,8 @@ body {
 }
 
 .one {
-  text-align: center;
-  position: relative;
-  bottom: 35px;
-  line-height: 30px;
+  margin-top: 15px;
+  line-height: 1.6;
 }
 
 .one h1 {
@@ -63,39 +59,43 @@ body {
 }
 
 .one span {
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 400;
   color: hsl(227, 10%, 46%);
 }
 
 .one p {
+  font-size: 1rem;
   color: hsl(227, 10%, 46%);
 }
 
 .line {
   width: 100%;
   height: 1px;
-  background-color: hsl(0, 2%, 88%);
+  background-color: hsl(0, 0%, 90%);
   margin: 20px 0;
 }
 
 .item-list {
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  padding: 0 10px;
 }
 
 .item {
+  text-align: center;
   list-style: none;
 }
 
 .item h2 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: hsl(229, 23%, 23%);
 }
 
 .item .para {
   font-size: 0.9rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: hsl(227, 10%, 46%);
 }
 
