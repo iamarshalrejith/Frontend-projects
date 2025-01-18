@@ -14,10 +14,17 @@ body {
   background-position: top left, bottom right;
   background-repeat: no-repeat, no-repeat;
   background-size: 350px, 350px;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1; 
 }
 
 .card {
@@ -27,7 +34,6 @@ body {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
-  padding: 20px; 
 }
 
 #banner {
@@ -41,7 +47,7 @@ body {
 }
 
 .avatar {
-  margin-top: -50px; 
+  margin-top: -50px;
 }
 
 .avatar img {
@@ -78,28 +84,29 @@ body {
   background-color: hsl(0, 0%, 90%);
   margin: 20px 0;
 }
+
 .item-list {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 20px;
   text-align: center;
-  padding: 20px; 
-  margin-bottom: 20px; 
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .item {
-  flex: 1; 
+  flex: 1;
   list-style: none;
-  padding: 10px; 
-  background-color: hsl(0, 0%, 96%); 
+  padding: 10px;
+  background-color: hsl(0, 0%, 96%);
   border-radius: 10px;
 }
 
 .item h2 {
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   font-weight: 700;
   color: hsl(229, 23%, 23%);
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .item .para {
@@ -108,11 +115,14 @@ body {
   color: hsl(227, 10%, 46%);
 }
 
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
 
 footer .attribution {
   font-size: 11px;
-  text-align: center;
-  margin-top: 20px;
+  color: hsl(228, 45%, 44%);
 }
 
 footer .attribution a {
