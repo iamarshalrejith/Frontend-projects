@@ -2,55 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Profile card component</title>
+  <title>Profile Card Component</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
-    <div class="bg-pattern-top">
-      <img src="./images/bg-pattern-top.svg" alt="bg-pattern-top">
-    </div>
     <div class="card">
-      <div id="banner">
-        <img src="./images/bg-pattern-card.svg" alt="bg-pattern-card">
-      </div>
+      <div id="banner"></div>
       <div class="avatar">
         <img src="./images/image-victor.jpg" alt="Victor Crest">
       </div>
-      <div class="one"> 
+      <div class="one">
         <h1>Victor Crest <span>26</span></h1>
         <p>London</p>
-        </div>
+      </div>
       <div class="line"></div>
-    <div class="items">
-      <div class="item">
-        <h2>80K</h2>
-        <p class="para">Followers</p>
-      </div>
-      <div class="item">
-        <h2>803K</h2>
-        <p class="para">Likes</p>
-      </div>
-      <div class="item">
-        <h2>1.4K</h2>
-        <p class="para">Photos</p>
-      </div>
-    </div>
-    </div>
-    <div class="bg-pattern-bottom">
-      <img src="./images/bg-pattern-bottom.svg" alt="bg-pattern-bottom">
+      <ul class="item-list">
+        <li class="item">
+          <h2>80K <span class="para">Followers</span></h2>
+        </li>
+        <li class="item">
+          <h2>803K <span class="para">Likes</span></h2>
+        </li>
+        <li class="item">
+          <h2>1.4K <span class="para">Photos</span></h2>
+        </li>
+      </ul>
     </div>
   </main>
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Arshal Rejith S</a>.
     </div>
   </footer>
