@@ -34,14 +34,14 @@ main {
 .card {
   max-width: 375px;
   width: 90%;
-  height: auto;
+  height: 100vh;  /* Set card height to full viewport height */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;  /* Ensure that containers inside take full height */
   align-items: center;
   border-radius: 10px;
   margin: 20px;
-  min-height: 400px;  /* Ensure the card has a minimum height */
+  overflow: hidden; /* Ensure content doesn't overflow the card */
 }
 
 h1,
@@ -134,9 +134,8 @@ h3 {
     align-items: center; /* Center the content horizontally */
     width: 100%;
     max-width: 375px;
-    height: auto;
+    height: 100vh;  /* Ensure the card fills the full viewport height */
     margin: 20px;
-    min-height: 400px;  /* Ensure the card takes up enough height on small screens */
   }
 
   .cont {
