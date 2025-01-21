@@ -34,14 +34,14 @@ main {
 .card {
   max-width: 375px;
   width: 90%;
-  height: 100vh;  /* Set card height to full viewport height */
+  height: 100vh;  /* Ensure the card takes full height of viewport */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  /* Ensure that containers inside take full height */
+  justify-content: flex-start;  /* Start content from top */
   align-items: center;
   border-radius: 10px;
   margin: 20px;
-  overflow: hidden; /* Ensure content doesn't overflow the card */
+  overflow: auto; /* Enable scrolling when content overflows */
 }
 
 h1,
@@ -136,6 +136,7 @@ h3 {
     max-width: 375px;
     height: 100vh;  /* Ensure the card fills the full viewport height */
     margin: 20px;
+    overflow: auto;  /* Allow scrolling if content exceeds height */
   }
 
   .cont {
