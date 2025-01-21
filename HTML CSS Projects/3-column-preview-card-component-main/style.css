@@ -41,6 +41,7 @@ main {
   align-items: center;
   border-radius: 10px;
   margin: 20px;
+  min-height: 400px;  /* Ensure the card has a minimum height */
 }
 
 h1,
@@ -73,6 +74,7 @@ h3 {
 
 .cont {
   padding: 50px;
+  flex-grow: 1;  /* Allow content to take up remaining space */
 }
 
 .image {
@@ -134,6 +136,7 @@ h3 {
     max-width: 375px;
     height: auto;
     margin: 20px;
+    min-height: 400px;  /* Ensure the card takes up enough height on small screens */
   }
 
   .cont {
@@ -143,6 +146,7 @@ h3 {
     align-items: stretch;
     padding: 20px;
     width: 100%;
+    min-height: 200px;  /* Ensure container 1, 2, 3 fill the space */
   }
 
   .image {
