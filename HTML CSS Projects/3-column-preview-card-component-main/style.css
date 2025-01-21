@@ -187,8 +187,8 @@ h1, h2, h3 {
     max-height: 90vh; /* Limit the height to 90% of the viewport height */
     margin-top: 5vh; /* Add some space at the top */
     margin-bottom: 5vh; /* Add space at the bottom to prevent touching */
-    opacity: 0;
-    animation: slideInFromBottom 1s ease-out forwards; /* Slide-in animation */
+    animation: fadeInLargeScreen 1s ease-out forwards; /* Fade in for larger screens */
+    opacity: 1;  /* Ensure content is visible */
   }
 
   .cont {
@@ -253,11 +253,11 @@ h1, h2, h3 {
   }
 }
 
-@keyframes slideInFromBottom {
+@keyframes fadeInLargeScreen {
   0% {
-    transform: translateY(100%);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
