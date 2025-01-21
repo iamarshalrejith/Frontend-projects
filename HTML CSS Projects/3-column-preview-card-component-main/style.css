@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
   font-family: "Lexend Deca", sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: hsl(0, 0%, 95%);
   display: flex;
@@ -118,6 +123,7 @@ h3 {
   color: white;
 }
 
+/* Responsive Styles */
 @media (max-width: 375px) {
   .card {
     display: flex;
@@ -137,6 +143,20 @@ h3 {
     align-items: stretch;
     padding: 20px;
     width: 100%;
+  }
+
+  .image {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .head {
+    font-size: 30px;
+  }
+
+  .para {
+    font-size: 14px;
   }
 }
 
@@ -160,27 +180,28 @@ h3 {
     flex: 1;
     align-items: stretch;
   }
+
   .container1 {
-      background-color: hsl(31, 77%, 52%);
-      border: none;
-      outline: none;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 10px;
-    }
-  
-    .container2 {
-      background-color: hsl(184, 100%, 22%);
-      border: none;
-      outline: none;
-    }
-  
-    .container3 {
-      background-color: hsl(179, 100%, 13%);
-      border: none;
-      outline: none;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 0px;
-    }
+    background-color: hsl(31, 77%, 52%);
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .container2 {
+    background-color: hsl(184, 100%, 22%);
+    border: none;
+    outline: none;
+  }
+
+  .container3 {
+    background-color: hsl(179, 100%, 13%);
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
 }
