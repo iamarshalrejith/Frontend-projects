@@ -42,6 +42,7 @@ main {
   border-radius: 10px;
   margin: 20px;
   overflow: auto; /* Enable scrolling when content overflows */
+  max-height: 90vh; /* Prevent card from becoming too large and touching top/bottom */
 }
 
 h1,
@@ -174,6 +175,9 @@ h3 {
     min-height: 500px;
     width: 90%;
     max-width: 1100px;
+    max-height: 90vh; /* Limit the height to 90% of the viewport height */
+    margin-top: 5vh; /* Add some space at the top */
+    margin-bottom: 5vh; /* Add space at the bottom to prevent touching */
   }
 
   .cont {
