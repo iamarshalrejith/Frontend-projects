@@ -27,7 +27,7 @@ main {
 }
 
 .card {
-  max-width: 375px; /* Keep the card's max width to 375px */
+  max-width: 375px;
   width: 90%;
   height: auto;
   display: flex;
@@ -36,7 +36,6 @@ main {
   align-items: center;
   border-radius: 10px;
   margin: 20px;
-  padding: 0;
 }
 
 h1,
@@ -68,23 +67,20 @@ h3 {
 }
 
 .cont {
-  padding: 30px; /* Reduce padding to ensure proper fitting */
-  width: 100%;
-  text-align: center; /* Center the content */
+  padding: 50px;
 }
 
 .image {
   position: relative;
   bottom: 15px;
   right: 15px;
-  margin: 0 auto;
 }
 
 .head {
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 28px; /* Make font size smaller for mobile */
+  font-size: 35px;
   margin-bottom: 10px;
 }
 
@@ -96,7 +92,7 @@ h3 {
 }
 
 .buttons {
-  width: 80%; /* Ensure buttons are not too large on small screens */
+  width: 70%;
   padding: 12px;
   border-radius: 30px;
   border: none;
@@ -122,67 +118,46 @@ h3 {
   color: white;
 }
 
+@media (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center the content horizontally */
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    margin: 20px;
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 20px;
+    width: 100%;
+  }
+}
 
 @media (min-width: 426px) {
-    .card {
-      max-width: 1100px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-      min-height: 500px;
-    }
-  
-    .cont {
-      padding: 50px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .image {
-      margin-bottom: 20px;
-    }
-  
-    .head {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-  
-    .para {
-      font-size: 18px;
-      padding-bottom: 25px;
-    }
-  
-    .buttons {
-      width: 80%;
-      padding: 14px 20px;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-  
-    .container1 {
-      background-color: hsl(31, 77%, 52%);
-      border: none;
-      outline: none;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 10px;
-    }
-  
-    .container2 {
-      background-color: hsl(184, 100%, 22%);
-      border: none;
-      outline: none;
-    }
-  
-    .container3 {
-      background-color: hsl(179, 100%, 13%);
-      border: none;
-      outline: none;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 0px;
-    }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;  /* This allows containers to wrap and adjust if needed */
+    min-height: 500px;
+    width: 90%;
+    max-width: 1100px;
   }
-  
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    flex: 1;
+    align-items: stretch;
+  }
+}
