@@ -160,4 +160,27 @@ h3 {
     flex: 1;
     align-items: stretch;
   }
+  .container1 {
+      background-color: hsl(31, 77%, 52%);
+      border: none;
+      outline: none;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+    }
+  
+    .container2 {
+      background-color: hsl(184, 100%, 22%);
+      border: none;
+      outline: none;
+    }
+  
+    .container3 {
+      background-color: hsl(179, 100%, 13%);
+      border: none;
+      outline: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+    }
 }
