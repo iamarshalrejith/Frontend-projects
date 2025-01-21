@@ -43,11 +43,11 @@ main {
   margin: 20px;
   overflow: auto; /* Enable scrolling when content overflows */
   max-height: 90vh; /* Prevent card from becoming too large and touching top/bottom */
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards; /* Added fade-in animation */
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Big Shoulders Display", cursive;
 }
 
@@ -57,12 +57,14 @@ h3 {
   outline: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .container2 {
   background-color: hsl(184, 100%, 22%);
   border: none;
   outline: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .container3 {
@@ -71,11 +73,14 @@ h3 {
   outline: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .cont {
   padding: 50px;
   flex-grow: 1;  /* Allow content to take up remaining space */
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards 0.5s; /* Text fade-in animation */
 }
 
 .image {
@@ -90,6 +95,7 @@ h3 {
   font-weight: lighter;
   font-size: 35px;
   margin-bottom: 10px;
+  animation: slideInFromLeft 1s ease-out; /* Header slide-in effect */
 }
 
 .para {
@@ -97,6 +103,8 @@ h3 {
   font-weight: lighter;
   margin-top: 15px;
   margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards 1s; /* Paragraph fade-in effect */
 }
 
 .buttons {
@@ -106,7 +114,7 @@ h3 {
   border: none;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and scale */
 }
 
 .button1 {
@@ -124,6 +132,7 @@ h3 {
 .buttons:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Responsive Styles */
@@ -178,6 +187,8 @@ h3 {
     max-height: 90vh; /* Limit the height to 90% of the viewport height */
     margin-top: 5vh; /* Add some space at the top */
     margin-bottom: 5vh; /* Add space at the bottom to prevent touching */
+    opacity: 0;
+    animation: slideInFromBottom 1s ease-out forwards; /* Slide-in animation */
   }
 
   .cont {
@@ -211,5 +222,42 @@ h3 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 0px;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
