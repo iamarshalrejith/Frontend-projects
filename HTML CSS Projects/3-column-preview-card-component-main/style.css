@@ -27,7 +27,7 @@ main {
 }
 
 .card {
-  max-width: 375px;
+  max-width: 375px; /* Keep the card's max width to 375px */
   width: 90%;
   height: auto;
   display: flex;
@@ -36,6 +36,7 @@ main {
   align-items: center;
   border-radius: 10px;
   margin: 20px;
+  padding: 0;
 }
 
 h1,
@@ -67,20 +68,23 @@ h3 {
 }
 
 .cont {
-  padding: 50px;
+  padding: 30px; /* Reduce padding to ensure proper fitting */
+  width: 100%;
+  text-align: center; /* Center the content */
 }
 
 .image {
   position: relative;
   bottom: 15px;
   right: 15px;
+  margin: 0 auto;
 }
 
 .head {
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 35px;
+  font-size: 28px; /* Make font size smaller for mobile */
   margin-bottom: 10px;
 }
 
@@ -92,7 +96,7 @@ h3 {
 }
 
 .buttons {
-  width: 70%;
+  width: 80%; /* Ensure buttons are not too large on small screens */
   padding: 12px;
   border-radius: 30px;
   border: none;
@@ -117,6 +121,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
+
 
 @media (min-width: 426px) {
     .card {
