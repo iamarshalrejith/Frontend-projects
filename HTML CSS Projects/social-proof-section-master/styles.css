@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  background-color: #f8f8f8;
+  background-image: 
+    url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  max-width: 375px;
+  margin-top: 6rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+}
+
+#one {
+  color: hsl(303, 10%, 53%);
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 15px 0;
+  padding: 0 15px;
+  line-height: 1.5rem;
+}
+
+.ratings {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.light-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.stars {
+  width: 100px;
+  height: 20px;
+  background-image: url("./images/icon-star.svg");
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.light-box h3 {
+  margin: 5px;
+  color: hsl(300, 43%, 22%);
+  font-size: 15px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
+  background-color: hsl(300, 43%, 22%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.box-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.user h4 {
+  margin: 0;
+  color: hsl(0, 4%, 75%);
+}
+
+.user p {
+  margin: 7px;
+  color: hsl(333, 80%, 67%);
+  position: relative;
+  right: 5px;
+}
+
+.box-content p {
+  color: hsl(0, 4%, 75%);
+  line-height: 20px;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.dp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: white; /* Set background to white */
+    background-image: 
+      url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  main {
+    margin: 200px;
+  }
+
+  h1 {
+    text-align: left;
+    width: fit-content;
+    font-size: 45px;
+    line-height: 1.1;
+    max-width: 30%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  #one {
+    position: relative;
+    right: 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 1.1;
+    max-width: 40%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  main {
+    width: 100%;
+    max-width: max-content;
+    margin-top: 6rem;
+    padding: 0 30px;
+  }
+
+  .desk-col {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .box-content p {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .ratings {
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+    right: 20rem;
+  }
+
+  .light-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .light-box h3 {
+    margin-left: 30px;
+  }
+  .l1{
+    position: relative;
+    right: 15rem;
+  }
+  .l2{
+    position: relative;
+    right: 10rem;
+  }
+  .l3{
+    position: relative;
+    right: 5rem;
+  }
+  .b1{
+    margin-top: 10px ;
+  }
+  .b2{
+    position: relative;
+    top: 2rem;
+  }
+  .b3{
+    position: relative;
+    top: 4rem;
+  }
+}
