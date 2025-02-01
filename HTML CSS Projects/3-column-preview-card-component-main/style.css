@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
   font-family: "Lexend Deca", sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: hsl(0, 0%, 95%);
   display: flex;
@@ -29,18 +34,20 @@ main {
 .card {
   max-width: 375px;
   width: 90%;
-  height: auto;
+  height: 100vh;  /* Ensure the card takes full height of viewport */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;  /* Start content from top */
   align-items: center;
   border-radius: 10px;
   margin: 20px;
+  overflow: auto; /* Enable scrolling when content overflows */
+  max-height: 90vh; /* Prevent card from becoming too large and touching top/bottom */
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards; /* Added fade-in animation */
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Big Shoulders Display", cursive;
 }
 
@@ -50,12 +57,14 @@ h3 {
   outline: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .container2 {
   background-color: hsl(184, 100%, 22%);
   border: none;
   outline: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .container3 {
@@ -64,10 +73,14 @@ h3 {
   outline: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .cont {
   padding: 50px;
+  flex-grow: 1;  /* Allow content to take up remaining space */
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards 0.5s; /* Text fade-in animation */
 }
 
 .image {
@@ -82,6 +95,7 @@ h3 {
   font-weight: lighter;
   font-size: 35px;
   margin-bottom: 10px;
+  animation: slideInFromLeft 1s ease-out; /* Header slide-in effect */
 }
 
 .para {
@@ -89,6 +103,8 @@ h3 {
   font-weight: lighter;
   margin-top: 15px;
   margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards 1s; /* Paragraph fade-in effect */
 }
 
 .buttons {
@@ -98,7 +114,7 @@ h3 {
   border: none;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and scale */
 }
 
 .button1 {
@@ -116,68 +132,132 @@ h3 {
 .buttons:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center the content horizontally */
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;  /* Ensure the card fills the full viewport height */
+    margin: 20px;
+    overflow: auto;  /* Allow scrolling if content exceeds height */
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;  /* Ensure container 1, 2, 3 fill the space */
+  }
+
+  .image {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .head {
+    font-size: 30px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 426px) {
-    .card {
-      max-width: 1100px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-      min-height: 500px;
-    }
-  
-    .cont {
-      padding: 50px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .image {
-      margin-bottom: 20px;
-    }
-  
-    .head {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-  
-    .para {
-      font-size: 18px;
-      padding-bottom: 25px;
-    }
-  
-    .buttons {
-      width: 80%;
-      padding: 14px 20px;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-  
-    .container1 {
-      background-color: hsl(31, 77%, 52%);
-      border: none;
-      outline: none;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 10px;
-    }
-  
-    .container2 {
-      background-color: hsl(184, 100%, 22%);
-      border: none;
-      outline: none;
-    }
-  
-    .container3 {
-      background-color: hsl(179, 100%, 13%);
-      border: none;
-      outline: none;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 0px;
-    }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;  /* This allows containers to wrap and adjust if needed */
+    min-height: 500px;
+    width: 90%;
+    max-width: 1100px;
+    max-height: 90vh; /* Limit the height to 90% of the viewport height */
+    margin-top: 5vh; /* Add some space at the top */
+    margin-bottom: 5vh; /* Add space at the bottom to prevent touching */
+    animation: fadeInLargeScreen 1s ease-out forwards; /* Fade in for larger screens */
+    opacity: 1;  /* Ensure content is visible */
   }
-  
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .container1 {
+    background-color: hsl(31, 77%, 52%);
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .container2 {
+    background-color: hsl(184, 100%, 22%);
+    border: none;
+    outline: none;
+  }
+
+  .container3 {
+    background-color: hsl(179, 100%, 13%);
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLargeScreen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
